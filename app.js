@@ -15,7 +15,8 @@ var indexRoutes= require("./routes/index");
 var campgrondRoutes= require("./routes/campground");
 
 //SeedDB();
-mongoose.connect("mongodb://localhost/yelp_camp");
+//mongoose.connect("mongodb://localhost/yelp_camp");    //connect to local database
+mongoose.connect("mongodb://admin:admin123@ds151892.mlab.com:51892/yelpcamp_db") //mongolab cloud connect
 var bodyParser = require('body-parser');
 
 //Middleware
